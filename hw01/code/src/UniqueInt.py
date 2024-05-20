@@ -63,7 +63,7 @@ def main():
     for input_filename in os.listdir(input_dir):
         if input_filename.endswith('.txt'):
             input_file_path = os.path.join(input_dir, input_filename)
-            output_file_path = os.path.join(output_dir, f"{input_filename}_results.txt")
+            output_file_path = os.path.join(output_dir, f"{input_filename}_result.txt")
             unique_int_processor = UniqueInt()
             unique_int_processor.process_file(input_file_path, output_file_path)
 
